@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Adrian/Documents/GitKraken/multimMobile/01-contactWithMonogame/01-SpaceHawks/SpaceHawks/Content/sprites/disparo.png</File>
+    <File>C:/Users/Adrian/Documents/GitKraken/multimMobile/01-contactWithMonogame/01-SpaceHawks/SpaceHawks/Content/sprites/enemigo1a.png</File>
+    <File>C:/Users/Adrian/Documents/GitKraken/multimMobile/01-contactWithMonogame/01-SpaceHawks/SpaceHawks/Content/sprites/fondo960.png</File>
+    <File>C:/Users/Adrian/Documents/GitKraken/multimMobile/01-contactWithMonogame/01-SpaceHawks/SpaceHawks/Content/sprites/nave.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>
