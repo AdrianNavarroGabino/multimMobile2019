@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Adrian/Documents/GitKraken/multimMobile/01-contactWithMonogame/01-SpaceHawks/SpaceHawks/Content/sprites/enemigo1a.png</SourceFile>
+  <SourceFile>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/enemigo1a.png</SourceFile>
   <SourceTime>2019-07-09T09:41:20+02:00</SourceTime>
-  <DestFile>C:/Users/Adrian/Documents/GitKraken/multimMobile/01-contactWithMonogame/01-SpaceHawks/SpaceHawks/Content/bin/Windows/Content/sprites/enemigo1a.xnb</DestFile>
-  <DestTime>2019-09-17T16:00:54.392108+02:00</DestTime>
+  <DestFile>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/Content/sprites/enemigo1a.xnb</DestFile>
+  <DestTime>2019-09-17T15:44:45.1106212+02:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

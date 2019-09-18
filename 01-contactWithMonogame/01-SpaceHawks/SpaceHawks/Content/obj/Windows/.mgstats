@@ -1,5 +1,2 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/disparo.png","C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/sprites/disparo.xnb","TextureProcessor","Texture2DContent",1186,2389,0,2966354
-"C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/enemigo1a.png","C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/sprites/enemigo1a.xnb","TextureProcessor","Texture2DContent",1270,6421,0,0312497
-"C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/fondo960.png","C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/sprites/fondo960.xnb","TextureProcessor","Texture2DContent",1661,2304085,0,2187462
-"C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/nave.png","C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/sprites/nave.xnb","TextureProcessor","Texture2DContent",644,18517,0,0625007
+"C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sounds/fire.mp3","C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/sounds/fire.xnb","SoundEffectProcessor","SoundEffectContent",5267,46373,0,7959938

@@ -4,12 +4,20 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
+    <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/fonts/Font.spritefont</File>
+    <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sounds/fire.mp3</File>
+    <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sounds/levelTick.mp3</File>
+    <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sounds/playerDie.mp3</File>
     <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/disparo.png</File>
     <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/enemigo1a.png</File>
     <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/fondo960.png</File>
     <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sprites/nave.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
