@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/fonts/Font.spritefont</SourceFile>
-  <SourceTime>2019-09-18T16:25:13.0348272+02:00</SourceTime>
-  <DestFile>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/Content/fonts/Font.xnb</DestFile>
-  <DestTime>2019-09-18T16:25:24.769023+02:00</DestTime>
+  <SourceFile>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/fonts/Font8Bit.spritefont</SourceFile>
+  <SourceTime>2019-09-19T09:39:38.4700582+02:00</SourceTime>
+  <DestFile>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/bin/Windows/Content/fonts/Font8Bit.xnb</DestFile>
+  <DestTime>2019-09-19T09:39:59.2117549+02:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

@@ -60,7 +60,7 @@ namespace SpaceHawks
             ship = Content.Load<Texture2D>("sprites/nave");
             enemy = Content.Load<Texture2D>("sprites/enemigo1a");
 
-            font = Content.Load<SpriteFont>("fonts/Font");
+            font = Content.Load<SpriteFont>("fonts/Font8Bit");
 
             backgroundMusic = Content.Load<Song>("sounds/levelTick");
             playerDie = Content.Load<SoundEffect>("sounds/playerDie");

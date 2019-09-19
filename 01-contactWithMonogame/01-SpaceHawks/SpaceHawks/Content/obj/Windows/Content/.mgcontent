@@ -4,7 +4,7 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/fonts/Font.spritefont</File>
+    <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/fonts/Font8Bit.spritefont</File>
     <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sounds/fire.mp3</File>
     <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sounds/levelTick.mp3</File>
     <File>C:/Users/Adrian/source/repos/SpaceHawks/SpaceHawks/Content/sounds/playerDie.mp3</File>

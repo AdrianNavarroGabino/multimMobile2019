@@ -25,8 +25,9 @@ C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content
 C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\sprites\enemigo1a.xnb
 C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\sprites\fondo960.xnb
 C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\sprites\nave.xnb
-C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\fonts\Font.xnb
 C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\sounds\levelTick.wma
 C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\sounds\levelTick.xnb
 C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\sounds\playerDie.xnb
 C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\sounds\fire.xnb
+C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\fonts\8-BitMadness.ttf
+C:\Users\Adrian\source\repos\SpaceHawks\SpaceHawks\bin\Windows\x86\Debug\Content\fonts\Font8Bit.xnb
