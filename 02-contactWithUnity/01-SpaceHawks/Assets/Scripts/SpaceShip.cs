@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SpaceShip : MonoBehaviour
 {
     [SerializeField] private float speed = 50;
+    [SerializeField] private Text scoreboardText;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -22,5 +25,10 @@ public class SpaceShip : MonoBehaviour
         {
             GetComponent<AudioSource>().Play();
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        scoreboardText.text = "Hit!";
     }
 }
