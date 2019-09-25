@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class Shot : MonoBehaviour
 {
     [SerializeField] private float speed = 200;
+    [SerializeField] private Transform explosionPrefab;
 
     private void Start()
     {
@@ -26,8 +27,12 @@ public class Shot : MonoBehaviour
     {
         if (other.tag == "Enemy")
         {
+            Transform explosion = Instantiate(explosionPrefab,
+                transform.position,
+                Quaternion.identity);
             Destroy(other.gameObject);
             Destroy(gameObject);
+            Destroy(explosion.gameObject, 1f);
         }
     }
 }
