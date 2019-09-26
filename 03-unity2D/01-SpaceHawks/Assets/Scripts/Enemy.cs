@@ -8,11 +8,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float speedY = 2F;
     [SerializeField] private float shotSpeed = -2F;
     [SerializeField] Transform prefabShot;
+    private GameController g;
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(Shoot());
+        g = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
@@ -33,5 +35,13 @@ public class Enemy : MonoBehaviour
         Transform shot = Instantiate(prefabShot,
             transform.position, Quaternion.identity);
         StartCoroutine(Shoot());
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Spaceship")
+        {
+            g.LoseLife();
+        }
     }
 }

@@ -7,11 +7,13 @@ public class Shot : MonoBehaviour
 {
     [SerializeField] private float speed = 200;
     [SerializeField] private Transform explosionPrefab;
+    private GameController g;
 
     private void Start()
     {
         gameObject.GetComponent<Rigidbody2D>().velocity =
             new Vector2(0, speed * Time.deltaTime);
+        g = g = FindObjectOfType<GameController>(); ;
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class Shot : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
             Destroy(explosion.gameObject, 1f);
+            g.KillEnemy();
         }
     }
 }

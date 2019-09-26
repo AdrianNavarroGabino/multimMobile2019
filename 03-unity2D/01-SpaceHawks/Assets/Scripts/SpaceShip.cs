@@ -8,11 +8,11 @@ public class SpaceShip : MonoBehaviour
     [SerializeField] private float speed = 50;
     [SerializeField] private Text scoreboardText;
     [SerializeField] Transform prefabShot;
+    private GameController g;
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -30,10 +30,5 @@ public class SpaceShip : MonoBehaviour
                             transform.position.y + (float)0.4),
                 Quaternion.identity);
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        scoreboardText.text = "Hit!";
     }
 }
