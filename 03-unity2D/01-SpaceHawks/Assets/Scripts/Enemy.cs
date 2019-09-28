@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] private float speedX = 2F;
-    [SerializeField] private float speedY = 2F;
+    [SerializeField] public static float speedX = 1F;
+    [SerializeField] public static float speedY = 0.08f;
     [SerializeField] private float shotSpeed = -2F;
     [SerializeField] Transform prefabShot;
     private GameController g;
@@ -21,16 +21,16 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         transform.Translate(
-            speedX * Time.deltaTime, speedY * Time.deltaTime, 0);
+            speedX * Time.deltaTime, -speedY * Time.deltaTime, 0);
         if (transform.position.x > 4 || transform.position.x < -4)
+        {
             speedX = -speedX;
-        if (transform.position.y > 2.5 || transform.position.y < -2.5)
-            speedY = -speedY;
+        }
     }
 
     IEnumerator Shoot()
     {
-        float pause = Random.Range(3, 7);
+        float pause = Random.Range(5, 15);
         yield return new WaitForSeconds(pause);
         Transform shot = Instantiate(prefabShot,
             transform.position, Quaternion.identity);

@@ -94,8 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1ea087dfde3d74091ba46d1268ced1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: 2
-  speedY: 2
+  speedY: 0.05
   shotSpeed: -2
   prefabShot: {fileID: 2830411663982207770, guid: 004e959c6b73ba541b428bff003422db,
     type: 3}
@@ -123,7 +122,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.66, y: 0.15053642}
+  m_Size: {x: 0.5369334, y: 0.15053642}
   m_EdgeRadius: 0
 --- !u!95 &9025125665135855780
 Animator:

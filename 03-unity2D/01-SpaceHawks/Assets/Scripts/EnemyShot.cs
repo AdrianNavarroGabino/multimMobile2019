@@ -5,14 +5,13 @@ using UnityEngine;
 public class EnemyShot : MonoBehaviour
 {
     [SerializeField] private float speed = -200;
-    [SerializeField] private Transform explosionPrefab;
     private GameController g;
 
     private void Start()
     {
         gameObject.GetComponent<Rigidbody2D>().velocity =
             new Vector2(0, speed * Time.deltaTime);
-        g = g = FindObjectOfType<GameController>();
+        g = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
@@ -28,12 +27,7 @@ public class EnemyShot : MonoBehaviour
     {
         if (other.tag == "Spaceship")
         {
-            Transform explosion = Instantiate(explosionPrefab,
-                transform.position,
-                Quaternion.identity);
-            Destroy(other.gameObject);
             Destroy(gameObject);
-            Destroy(explosion.gameObject, 1f);
 
             g.LoseLife();
         }
