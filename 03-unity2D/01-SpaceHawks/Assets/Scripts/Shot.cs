@@ -37,5 +37,10 @@ public class Shot : MonoBehaviour
             Destroy(explosion.gameObject, 1f);
             g.KillEnemy();
         }
+        if(other.tag == "EnemyShot")
+        {
+            Destroy(other.gameObject);
+            Destroy(gameObject);
+        }
     }
 }

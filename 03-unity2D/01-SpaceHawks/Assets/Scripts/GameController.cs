@@ -14,8 +14,11 @@ public class GameController : MonoBehaviour
     [SerializeField] private Text levelText;
     [SerializeField] Transform prefabEnemy;
     [SerializeField] const int NUMBER_OF_ENEMIES = 24;
+    [SerializeField] const int ENEMY_ROWS = 4;
+    [SerializeField] const int ENEMY_COLUMNS = 6;
     [SerializeField] private Vector2 initialEnemyPosition;
     [SerializeField] public int level;
+    private static int trickCount = 0;
 
     private Enemy[] enemies;
     public int numberOfLivingEnemies;
@@ -66,7 +69,7 @@ public class GameController : MonoBehaviour
         }
     }
 
-    IEnumerator GameOver()
+    public IEnumerator GameOver()
     {
         gameOverText.enabled = true;
         Time.timeScale = 0.01f;
@@ -86,14 +89,38 @@ public class GameController : MonoBehaviour
         yield return new WaitForSecondsRealtime(3);
         Time.timeScale = 1;
         levelText.enabled = false;
-        for (int i = 0; i < NUMBER_OF_ENEMIES / 6; i++)
+        for (int i = 0; i < ENEMY_ROWS; i++)
         {
-            for(int j = 0; j < 6; j++)
+            for(int j = 0; j < ENEMY_COLUMNS; j++)
             {
                 Transform enemy = Instantiate(prefabEnemy,
                 new Vector2(initialEnemyPosition.x + 0.9f * j,
                             initialEnemyPosition.y - 0.4f * i),
                 Quaternion.identity);
+            }
+        }
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            lives++;
+            DisplayText();
+        }
+
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            Destroy(FindObjectOfType<Enemy>().gameObject);
+            KillEnemy();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha9))
+        {
+            while (FindObjectOfType<Enemy>())
+            {
+                Destroy(FindObjectOfType<Enemy>().gameObject);
+                KillEnemy();
             }
         }
     }

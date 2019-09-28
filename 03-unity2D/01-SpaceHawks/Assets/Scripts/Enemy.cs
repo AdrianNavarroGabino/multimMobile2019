@@ -6,7 +6,6 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] public static float speedX = 1F;
     [SerializeField] public static float speedY = 0.08f;
-    [SerializeField] private float shotSpeed = -2F;
     [SerializeField] Transform prefabShot;
     private GameController g;
 
@@ -25,6 +24,11 @@ public class Enemy : MonoBehaviour
         if (transform.position.x > 4 || transform.position.x < -4)
         {
             speedX = -speedX;
+        }
+
+        if(transform.position.y < -3)
+        {
+            StartCoroutine(g.GameOver());
         }
     }
 
