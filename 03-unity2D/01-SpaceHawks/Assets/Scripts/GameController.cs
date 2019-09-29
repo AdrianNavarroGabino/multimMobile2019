@@ -19,9 +19,10 @@ public class GameController : MonoBehaviour
     [SerializeField] private Vector2 initialEnemyPosition;
     [SerializeField] public int level;
     private static int trickCount = 0;
+    private bool isInputEnabled;
 
     private Enemy[] enemies;
-    public int numberOfLivingEnemies;
+    public static int numberOfLivingEnemies;
 
     // Start is called before the first frame update
     void Start()
@@ -35,6 +36,7 @@ public class GameController : MonoBehaviour
         level = 1;
         StartCoroutine(CreateEnemies());
         numberOfLivingEnemies = NUMBER_OF_ENEMIES;
+        isInputEnabled = true;
     }
 
     public void DisplayText()
@@ -72,22 +74,21 @@ public class GameController : MonoBehaviour
     public IEnumerator GameOver()
     {
         gameOverText.enabled = true;
-        Time.timeScale = 0.01f;
-        yield return new WaitForSecondsRealtime(3);
-        Time.timeScale = 1;
+        DisableInput();
+        yield return new WaitForSeconds(3);
+        EnableInput();
         SceneManager.LoadScene(0);
     }
 
     public IEnumerator CreateEnemies()
     {
+        DisableInput();
         // Time for the enemy to explode
         if (level != 1)
             yield return new WaitForSeconds(1);
         levelText.text = "Level " + level;
         levelText.enabled = true;
-        Time.timeScale = 0.01f;
-        yield return new WaitForSecondsRealtime(3);
-        Time.timeScale = 1;
+        yield return new WaitForSeconds(3);
         levelText.enabled = false;
         for (int i = 0; i < ENEMY_ROWS; i++)
         {
@@ -99,6 +100,7 @@ public class GameController : MonoBehaviour
                 Quaternion.identity);
             }
         }
+        EnableInput();
     }
 
     private void Update()
@@ -123,5 +125,20 @@ public class GameController : MonoBehaviour
                 KillEnemy();
             }
         }
+    }
+
+    public void EnableInput()
+    {
+        isInputEnabled = true;
+    }
+
+    public void DisableInput()
+    {
+        isInputEnabled = false;
+    }
+
+    public bool IsInputEnabled()
+    {
+        return isInputEnabled;
     }
 }

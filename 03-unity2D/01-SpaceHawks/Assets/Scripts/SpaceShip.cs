@@ -13,22 +13,26 @@ public class SpaceShip : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        g = FindObjectOfType<GameController>();
     }
 
     // Update is called once per frame
     void Update()
     {
         float horizontal = Input.GetAxis("Horizontal");
-        
-        transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
 
-        if (Input.GetButtonDown("Fire1"))
+        if (g.IsInputEnabled())
         {
-            GetComponent<AudioSource>().Play();
-            Transform shot = Instantiate(prefabShot,
-                new Vector2(transform.position.x,
-                            transform.position.y + (float)0.4),
-                Quaternion.identity);
+            transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
+
+            if (Input.GetButtonDown("Fire1"))
+            {
+                GetComponent<AudioSource>().Play();
+                Transform shot = Instantiate(prefabShot,
+                    new Vector2(transform.position.x,
+                                transform.position.y + (float)0.4),
+                    Quaternion.identity);
+            }
         }
     }
 }

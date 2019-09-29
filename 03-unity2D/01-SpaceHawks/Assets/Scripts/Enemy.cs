@@ -19,16 +19,19 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(
-            speedX * Time.deltaTime, -speedY * Time.deltaTime, 0);
-        if (transform.position.x > 4 || transform.position.x < -4)
+        if (g.IsInputEnabled())
         {
-            speedX = -speedX;
-        }
+            transform.Translate(
+                speedX * Time.deltaTime, -speedY * Time.deltaTime, 0);
+            if (transform.position.x > 4 || transform.position.x < -4)
+            {
+                speedX = -speedX;
+            }
 
-        if(transform.position.y < -3)
-        {
-            StartCoroutine(g.GameOver());
+            if (transform.position.y < -3)
+            {
+                StartCoroutine(g.GameOver());
+            }
         }
     }
 
