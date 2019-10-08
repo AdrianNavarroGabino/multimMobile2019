@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float speed = 4;
-    [SerializeField] private float jumpSpeed = 2;
+    [SerializeField] private float speed = 3;
+    [SerializeField] private float jumpSpeed = 8;
+    private bool canJump;
 
     // Start is called before the first frame update
     void Start()
@@ -22,10 +23,19 @@ public class Player : MonoBehaviour
 
         float jump = Input.GetAxis("Jump");
 
-        if (jump > 0)
+        if (jump > 0 && canJump)
         {
+            canJump = false;
             Vector3 jumpForce = new Vector3(0, jumpSpeed, 0);
             GetComponent<Rigidbody2D>().AddForce(jumpForce);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.collider.tag == "Platform")
+        {
+            canJump = true;
         }
     }
 }
