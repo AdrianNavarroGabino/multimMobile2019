@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private float speed = 3;
-    [SerializeField] private float jumpSpeed = 8;
-    private bool canJump;
+    [SerializeField] private float speed = 2;
+    [SerializeField] private float jumpSpeed = 200;
+    private Vector3 initialPosition;
+    private float height;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        height = GetComponent<Collider2D>().bounds.size.y;
+        initialPosition = transform.position;
     }
 
     // Update is called once per frame
@@ -21,21 +23,24 @@ public class Player : MonoBehaviour
 
         transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
 
-        float jump = Input.GetAxis("Jump");
+        float jump = Input.GetAxisRaw("Jump");
 
-        if (jump > 0 && canJump)
+        if (jump > 0)
         {
-            canJump = false;
-            Vector3 jumpForce = new Vector3(0, jumpSpeed, 0);
-            GetComponent<Rigidbody2D>().AddForce(jumpForce);
+            RaycastHit2D hit =
+                Physics2D.Raycast(transform.position, new Vector2(0, -1));
+            float floorDistance = hit.distance;
+            bool grounded = floorDistance < height * 0.6f;
+            if (grounded)
+            {
+                Vector2 jumpForce = new Vector2(0, jumpSpeed);
+                GetComponent<Rigidbody2D>().AddForce(jumpForce);
+            }
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    void Reset()
     {
-        if(other.collider.tag == "Platform")
-        {
-            canJump = true;
-        }
+        transform.position = initialPosition;
     }
 }
