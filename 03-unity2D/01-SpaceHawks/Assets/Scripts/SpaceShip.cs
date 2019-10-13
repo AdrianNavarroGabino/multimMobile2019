@@ -9,11 +9,15 @@ public class SpaceShip : MonoBehaviour
     [SerializeField] private Text scoreboardText;
     [SerializeField] Transform prefabShot;
     private GameController g;
+    private bool canGoLeft;
+    private bool canGoRight;
 
     // Start is called before the first frame update
     void Start()
     {
         g = FindObjectOfType<GameController>();
+        canGoLeft = true;
+        canGoRight = true;
     }
 
     // Update is called once per frame
@@ -23,7 +27,16 @@ public class SpaceShip : MonoBehaviour
 
         if (g.IsInputEnabled())
         {
-            transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
+            if (horizontal < 0 && canGoLeft)
+            {
+                canGoRight = true;
+                transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
+            }
+            else if(horizontal > 0 && canGoRight)
+            {
+                canGoLeft = true;
+                transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
+            }
 
             if (Input.GetButtonDown("Fire1"))
             {
@@ -33,6 +46,18 @@ public class SpaceShip : MonoBehaviour
                                 transform.position.y + (float)0.4),
                     Quaternion.identity);
             }
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "LeftLimit")
+        {
+            canGoLeft = false;
+        }
+        if(other.tag == "RightLimit")
+        {
+            canGoRight = false;
         }
     }
 }

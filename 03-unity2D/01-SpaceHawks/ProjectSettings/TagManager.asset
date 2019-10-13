@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Spaceship
   - EnemyShot
+  - LeftLimit
+  - RightLimit
   layers:
   - Default
   - TransparentFX
