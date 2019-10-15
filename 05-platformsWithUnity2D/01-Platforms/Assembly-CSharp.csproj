@@ -63,6 +63,8 @@
     <Compile Include="Assets\Scripts\Diamond.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
+    <Compile Include="Assets\Scripts\GameStatus.cs" />
+    <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\LowerLimit.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="Cinemachine">

@@ -34,4 +34,13 @@ public class Enemy : MonoBehaviour
             nextPosition = wayPoints[nextPositionNumber].position;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            FindObjectOfType<GameStatus>().SendMessage("LivesDown");
+            FindObjectOfType<Player>().SendMessage("Reset");
+        }
+    }
 }

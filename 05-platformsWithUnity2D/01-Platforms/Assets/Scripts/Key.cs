@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class LowerLimit : MonoBehaviour
+public class Key : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -20,8 +21,10 @@ public class LowerLimit : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-            FindObjectOfType<GameStatus>().SendMessage("LivesDown");
-            FindObjectOfType<Player>().SendMessage("Reset");
+            Destroy(gameObject);
+            int level = FindObjectOfType<GameStatus>().currentLevel;
+            FindObjectOfType<GameStatus>().SendMessage("LevelUp");
+            SceneManager.LoadScene("Level" + (level + 1));
         }
     }
 }
