@@ -8,12 +8,14 @@ public class Player : MonoBehaviour
     [SerializeField] private float jumpSpeed = 200;
     private Vector3 initialPosition;
     private float height;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         height = GetComponent<Collider2D>().bounds.size.y;
         initialPosition = transform.position;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,7 +23,15 @@ public class Player : MonoBehaviour
     {
         float horizontal = Input.GetAxis("Horizontal");
 
-        transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
+        if (horizontal != 0)
+        {
+            animator.Play("PlayerWalking");
+            transform.Translate(horizontal * speed * Time.deltaTime, 0, 0);
+        }
+        else
+        {
+            animator.Play("PlayerStatic");
+        }
 
         float jump = Input.GetAxisRaw("Jump");
 

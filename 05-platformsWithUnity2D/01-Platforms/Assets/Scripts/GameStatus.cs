@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameStatus : MonoBehaviour
 {
     public int score = 0;
-    public int lives = 0;
+    public int lives = 3;
     public int currentLevel = 1;
 
     private void Awake()
@@ -38,6 +39,12 @@ public class GameStatus : MonoBehaviour
         currentLevel++;
     }
 
-    public void ScoreUp() { score += 10; }
-    public void LivesDown() { lives--; }
+    public void ScoreUp()
+    {
+        score += 10;
+    }
+    public void LivesDown()
+    {
+        lives--;
+    }
 }

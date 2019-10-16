@@ -24,7 +24,14 @@ public class Key : MonoBehaviour
             Destroy(gameObject);
             int level = FindObjectOfType<GameStatus>().currentLevel;
             FindObjectOfType<GameStatus>().SendMessage("LevelUp");
-            SceneManager.LoadScene("Level" + (level + 1));
+            if (SceneManager.sceneCountInBuildSettings - 3 > level)
+            {
+                SceneManager.LoadScene("Level" + (level + 1));
+            }
+            else
+            {
+                SceneManager.LoadScene("Congratulations");
+            }
         }
     }
 }

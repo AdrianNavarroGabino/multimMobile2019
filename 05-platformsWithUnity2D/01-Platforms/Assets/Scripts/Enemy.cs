@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
         {
             FindObjectOfType<GameStatus>().SendMessage("LivesDown");
             FindObjectOfType<Player>().SendMessage("Reset");
+            FindObjectOfType<GameController>().SendMessage("ChangeLives");
         }
     }
 }

@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\GameStatus.cs" />
     <Compile Include="Assets\Scripts\Key.cs" />
     <Compile Include="Assets\Scripts\LowerLimit.cs" />
+    <Compile Include="Assets\Scripts\PlayAgain.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Reference Include="Cinemachine">
       <HintPath>C:/Users/Adrian/Platforms/Library/ScriptAssemblies/Cinemachine.dll</HintPath>

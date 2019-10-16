@@ -6,6 +6,8 @@ public class Diamond : MonoBehaviour
 {
     public static int score;
     public static int remainingItems;
+    [SerializeField] AudioClip audio;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,8 @@ public class Diamond : MonoBehaviour
             Destroy(gameObject);
             FindObjectOfType<GameController>().
                 SendMessage("ItemPicked");
+
+            AudioSource.PlayClipAtPoint(audio, Camera.main.transform.position);
         }
     }
 }
