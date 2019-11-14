@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">imcCalculator</string>
+    <string name="height_in_cm">Height (in cm):</string>
+    <string name="weight">Weight:</string>
+    <string name="imc">IMC:</string>
+    <string name="calculate">Calculate</string>
+</resources>
