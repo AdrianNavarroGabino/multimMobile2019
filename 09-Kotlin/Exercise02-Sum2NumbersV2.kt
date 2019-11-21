@@ -7,7 +7,7 @@
 fun main() {
     println("Enter the first number")
     var a = readLine()!!.toInt()
-    println("Ente the second number")
+    println("Enter the second number")
     var b = readLine()!!.toInt()
     var sum = a + b
     println("Their sum is: " + sum)
