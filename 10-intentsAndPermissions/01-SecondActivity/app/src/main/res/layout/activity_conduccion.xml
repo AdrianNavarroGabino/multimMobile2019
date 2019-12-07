@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Conduccion">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="La conducción de calor o transferencia de energía en forma de calor por conducción es un proceso de transmisión de calor basado en el contacto directo entre los cuerpos, sin intercambio de materia, porque el calor fluye desde un cuerpo de mayor temperatura a otro de menor temperatura que está en contacto con el primero.1​ La propiedad física de los materiales que determina su capacidad para conducir el calor es la conductividad térmica.2​ La propiedad inversa de la conductividad térmica es la resistividad térmica, que es la capacidad de los materiales para oponerse al paso del calor. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+</androidx.constraintlayout.widget.ConstraintLayout>

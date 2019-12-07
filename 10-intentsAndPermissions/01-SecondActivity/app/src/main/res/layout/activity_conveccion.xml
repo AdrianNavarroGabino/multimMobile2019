@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Conveccion">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="La convección es una de las tres formas de transferencia de calor (conducción, convección y radiación) que transporta el calor entre zonas con diferentes temperaturas. La convección se produce únicamente por medio de materiales, la evaporación del agua o fluidos. La convección en sí es el transporte de calor por medio del movimiento del fluido. Por ejemplo, al calentar el agua en una cacerola, el agua que entra en contacto con la base de la cacerola asciende al calentarse, mientras que el agua de la superficie desciende por los lados al enfriarse, y ocupa el lugar que dejó la porción caliente. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+</androidx.constraintlayout.widget.ConstraintLayout>
