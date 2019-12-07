@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BaseAdapter</string>
+    <string-array name="name">
+        <item>Programación de procesos y servicios</item>
+        <item>Empresa e iniciativa emprendedora</item>
+        <item>Programación multimedia y móviles</item>
+        <item>Acceso a datos</item>
+        <item>Sistemas de gestión empresarial</item>
+        <item>Desarrollo de interfaces</item>
+    </string-array>
+    <string-array name="name2">
+        <item>PSP</item>
+        <item>EIE</item>
+        <item>PMM</item>
+        <item>AD</item>
+        <item>SGE</item>
+        <item>DI</item>
+    </string-array>
+    <string-array name="description">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </item>
+        <item>ad minim veniam, quis nostrud exercitation ullamco</item>
+        <item>laboris nisi ut aliquip ex ea commodo consequat.</item>
+        <item>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</item>
+        <item>eu fugiat nulla pariatur. Excepteur sint occaecat</item>
+        <item>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</item>
+    </string-array>
+</resources>
