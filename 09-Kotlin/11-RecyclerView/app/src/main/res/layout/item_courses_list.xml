@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cv_item"
+    android:padding="15dp"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/root_layout_cv"
+        android:background="@android:color/holo_orange_light">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/courseImage"
+            android:contentDescription="h"
+            app:srcCompat="@mipmap/ic_launcher_round"/>
+        <TextView
+            android:text="h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/courseImage"
+            android:textSize="30sp"/>
+        <TextView
+            android:text="h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/abrev"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/courseImage"
+            android:layout_below="@id/name"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
