@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecondActivity</string>
+    <string name="convecci_n">Convección</string>
+    <string name="conducci_n">Conducción</string>
+    <string name="radiaci_n">Radiación</string>
+    <string name="c_to_f">ºC to ºF</string>
+</resources>
