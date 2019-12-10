@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">OpenMaps</string>
+    <string name="show_map">Show map</string>
+</resources>
