@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MD5OrSHA1</string>
+    <string name="encrypt">Encode</string>
+</resources>
