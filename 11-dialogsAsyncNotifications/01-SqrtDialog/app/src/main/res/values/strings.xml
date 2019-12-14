@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SqrtDialog</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_number">Enter number</string>
+</resources>
