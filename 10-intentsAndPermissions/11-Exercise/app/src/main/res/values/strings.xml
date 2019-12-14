@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Exercise</string>
+    <string name="save">Save</string>
+    <string name="show">Show</string>
+    <string name="back">Back</string>
+    <string name="your_name">Your name</string>
+    <string name="your_mail">Your mail</string>
+</resources>
