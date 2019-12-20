@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ManyThreads</string>
+    <string name="thread_1">Thread 1</string>
+    <string name="thread_2">Thread 2</string>
+    <string name="thread_3">Thread 3</string>
+    <string name="thread_4">Thread 4</string>
+</resources>
