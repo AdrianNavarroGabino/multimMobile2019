@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Fragments5</string>
+    <string name="pass_info_to_fragment">Pass info to fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pass_info_to_activity">Pass info to activity</string>
+</resources>
