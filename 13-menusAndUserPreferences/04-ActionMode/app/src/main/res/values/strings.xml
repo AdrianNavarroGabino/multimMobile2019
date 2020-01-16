@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActionMode</string>
+    <string name="menu_op01">Opción 1</string>
+    <string name="menu_op02">Opción 2</string>
+</resources>
