@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ContextualMenu</string>
+    <string name="menu_op02">Renombrar</string>
+    <string name="menu_op01">Borrar</string>
+</resources>
