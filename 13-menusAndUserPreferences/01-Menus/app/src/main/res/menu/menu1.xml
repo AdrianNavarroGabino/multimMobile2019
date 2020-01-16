@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_hola"
+        android:title="Decir Hola" />
+    <item
+        android:id="@+id/menu_adios"
+        android:title="Decir Adiós" >
+        <menu >
+            <item android:title="Item" />
+            <item android:title="Item" />
+        </menu>
+    </item>
+</menu>
