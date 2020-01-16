@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Menus2</string>
+    <string name="decir_hola">Decir Hola</string>
+    <string name="saludar">Saludar</string>
+    <string name="toast">Toast</string>
+    <string name="snackbar">Snackbar</string>
+    <string name="dialog">Dialog</string>
+    <string name="texto">Texto</string>
+    <string name="emergente">Emergente</string>
+</resources>

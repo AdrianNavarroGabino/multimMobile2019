@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_hola"
+        android:title="@string/texto" />
+    <item
+        android:id="@+id/menu_saludar"
+        android:title="@string/emergente">
+        <menu>
+            <item
+                android:id="@+id/menu_toast"
+                android:title="@string/toast" />
+            <item
+                android:id="@+id/menu_snackbar"
+                android:title="@string/snackbar" />
+            <item
+                android:id="@+id/menu_dialog"
+                android:title="@string/dialog" />
+        </menu>
+    </item>
+</menu>
