@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ActionMode2</string>
+    <string name="menu_delete">Borrar</string>
+    <string name="menu_share">Compartir</string>
+</resources>
