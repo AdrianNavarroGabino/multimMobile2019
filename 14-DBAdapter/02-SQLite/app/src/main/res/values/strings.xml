@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SQLite</string>
+    <string name="nombre">Nombre:</string>
+    <string name="insertar">Insertar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="apellido">Apellido</string>
+    <string name="apellido1">Apellido:</string>
+    <string name="nombre1">Nombre</string>
+    <string name="consultar_datos">Consultar datos</string>
+</resources>
