@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Gastos</string>
+    <string name="ver_todos">Ver todos</string>
+    <string name="elegir">Elegir</string>
+    <string name="detalles">Detalles</string>
+    <string name="importe">Importe</string>
+    <string name="guardar">Guardar</string>
+    <string name="separador">-</string>
+    <string name="categor_a">Categoría:</string>
+    <string name="euro">€</string>
+    <string name="cuenta">Cuenta:</string>
+</resources>
