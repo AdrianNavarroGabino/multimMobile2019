@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "941288898193",
+    "firebase_url": "https://basura3-a55ce.firebaseio.com",
+    "project_id": "basura3-a55ce",
+    "storage_bucket": "basura3-a55ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941288898193:android:fe3d0e9ce3520e7f340930",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941288898193-rt8asca9kusl04lmjjh4559rlo631ura.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnGgt-oY07sRNqj8fXeKfAijJDfQ_os30"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941288898193-rt8asca9kusl04lmjjh4559rlo631ura.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
